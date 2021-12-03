@@ -1,4 +1,5 @@
 // Desafio 1
+//NOTA: o operador && define que a segunda condição só será avaliada caso a primeira seja válida
 function compareTrue(p1, p2) {
     if (p1 === true && p2 === true) {
       return true;
@@ -7,9 +8,9 @@ function compareTrue(p1, p2) {
 }
 
 // Desafio 2
+// NOTA: a fórmula é: (base * altura)/2
+//vou criar uma variável que receberá os parâmetros base e altura, aplicará essa fórmula e em seguida irei retornar os resultados
 function calcArea(base, height) {
-    // a fórmula é: (base * altura)/2
-    //vou criar uma variável que receberá os parâmetros base e altura, aplicará essa fórmula e em seguida irei retornar os resultados
 
     let form = ((base * height) / 2)
     return form
