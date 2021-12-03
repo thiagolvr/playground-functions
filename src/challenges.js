@@ -7,9 +7,15 @@ function compareTrue(p1, p2) {
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
-}
+function calcArea(base, height) {
+    // a fórmula é: (base * altura)/2
+    //vou criar uma variável que receberá os parâmetros base e altura, aplicará essa fórmula e em seguida irei retornar os resultados
+
+    let form = ((base * height) / 2)
+    return form
+    
+    } 
+
 
 // Desafio 3
 function splitSentence() {
