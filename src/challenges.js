@@ -19,11 +19,15 @@ function calcArea(base, height) {
 
 
 // Desafio 3
-//NOTA: criarei um for para percorrer o array e jogar os elementos em uma variavel com adição da string ","
-function splitSentence() {
+//NOTA: aqui usei uma função do js '.split' que separa uma string recebida em palavras, com o divisor sendo uma string vazia separada por aspas e espaço
+function splitSentence(string) {
     
+    let array = string.split(" ")
+    return array
+
 
 }
+
 
 // Desafio 4
 function concatName() {
