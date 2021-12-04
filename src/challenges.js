@@ -55,8 +55,20 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+//NOTA: Utilizando o for in (para percorrer os valores), utilizei uma variável contadora (para ser incrementada), e uma variável como o número máximo daquela array para fins comparativo no for (index), e validado tal condição a variável contadora será incrementada em +1
+function highestCount(arrayNumbers) {
+
+    let contador = 0;
+    let maxNumber = Math.max(...arrayNumbers);
+
+    for (let index of arrayNumbers) {
+        if (index === maxNumber) {
+          contador ++
+        }
+      }
+      
+      return contador
+
 }
 
 // Desafio 7
