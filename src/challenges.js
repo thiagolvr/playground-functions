@@ -43,17 +43,14 @@ function concatName(arrayAlvo) {
   }
 
 // Desafio 5
-function footballPoints() {
+//NOTA: Somente uma única variável foi necessária com a soma dons dois itens (wins e ties) com suas respectivas condições adicionadas
+function footballPoints(wins, ties) {
     
+  //cada vit vale 3 e cada empate 1
 
+    let pointResult = ((wins * 3) + (ties * 1));
 
-
-
-
-
-
-
-
+      return pointResult
 
 }
 
