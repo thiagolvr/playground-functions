@@ -35,18 +35,26 @@ function concatName(arrayAlvo) {
 
   let concatResult 
 
-      concatResult = (arrayAlvo[arrayAlvo.length -1] + "," + " " + (arrayAlvo[0]));
-        
-      return concatResult
-
-   
+    concatResult = (arrayAlvo.pop() + "," + " " + (arrayAlvo[0]));
+  //outra forma de fazer 
+  //concatResult = (arrayAlvo[arrayAlvo.length -1] + "," + " " + (arrayAlvo[0]));
+  
+      return concatResult 
   }
-
-
 
 // Desafio 5
 function footballPoints() {
-  // seu código aqui
+    
+
+
+
+
+
+
+
+
+
+
 }
 
 // Desafio 6
