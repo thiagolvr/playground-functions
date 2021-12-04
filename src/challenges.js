@@ -19,8 +19,10 @@ function calcArea(base, height) {
 
 
 // Desafio 3
+//NOTA: criarei um for para percorrer o array e jogar os elementos em uma variavel com adição da string ","
 function splitSentence() {
-  // seu código aqui
+    
+
 }
 
 // Desafio 4
