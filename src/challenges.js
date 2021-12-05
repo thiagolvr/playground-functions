@@ -72,8 +72,22 @@ function highestCount(arrayNumbers) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+//NOTA: o Math.abs converte os valores para um número absoluto facilitando a comparação que vamos usar no if
+function catAndMouse(mouse, cat1, cat2) {
+
+  let case1 = Math.abs(cat1 - mouse)
+  let case2 = Math.abs(cat2 - mouse)
+
+  if (case1 === case2){
+    return "os gatos trombam e o rato foge"
+  } else if (case1 < case2){
+    return "cat1"
+  } else {
+    return "cat2"
+  }
+
+
+
 }
 
 // Desafio 8
