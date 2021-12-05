@@ -110,12 +110,68 @@ function fizzBuzz(array) {
   }
   return result;
 }
-// Desafio 9
-function encode() {
-  // seu código aqui
+
+//DESABAFO: Pense num desafio que me estressou porque não me toquei que precisava das duas partes estarem completas para passar. Então, só com a encode completada ficava falhando e eu passei a manhã querendo entender o porquê dessa falha. Refiz esse negócio 500x pra saber que era só dar continuidade ao código, que estava tudo certo. "Burro, dá zero pra ele"
+//NOTA: Utilizei o split para separar as palavras da string em caracteres isolados para poder analisar com o for um por um de acordo com os requisitos, e depois de fazer as devidas substituições utilizei o join para fazer o caminho reverso do split, transformando os caracteres isolados em palavras novamente
+
+
+function encode(string) {
+
+
+  let stringSplit = string.split('');
+  
+  for (index = 0; index < stringSplit.length; index++) {
+    if (stringSplit[index] === 'a') {
+      stringSplit[index] = '1';
+    } else if (stringSplit[index] === 'e') {
+      stringSplit[index] = '2';
+    } else if (stringSplit[index] === 'i') {
+      stringSplit[index] = '3';
+    } else if (stringSplit[index] === 'o') {
+      stringSplit[index] = '4';
+    } else if (stringSplit[index] === 'u') {
+      stringSplit[index] = '5';
+    }
+  }
+  
+  let result = stringSplit.join('');
+  return result
 }
-function decode() {
-  // seu código aqui
+
+function decode(string2) {
+  
+
+  let stringSplit2 = string2.split('');
+  
+  for (index = 0; index < stringSplit2.length; index++) {
+    if (stringSplit2[index] === '1') {
+      stringSplit2[index] = 'a';
+    } else if (stringSplit2[index] === '2') {
+      stringSplit2[index] = 'e';
+    } else if (stringSplit2[index] === '3') {
+      stringSplit2[index] = 'i';
+    } else if (stringSplit2[index] === '4') {
+      stringSplit2[index] = 'o';
+    } else if (stringSplit2[index] === '5') {
+      stringSplit2[index] = 'u';
+    }
+  }
+  
+
+  let result2 = stringSplit2.join('');
+  return result2
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 module.exports = {
