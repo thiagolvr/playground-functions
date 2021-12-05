@@ -160,18 +160,6 @@ function decode(string2) {
 
   let result2 = stringSplit2.join('');
   return result2
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 module.exports = {
