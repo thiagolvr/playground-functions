@@ -72,7 +72,7 @@ function highestCount(arrayNumbers) {
 }
 
 // Desafio 7
-//NOTA: o Math.abs converte os valores para um número absoluto facilitando a comparação que vamos usar no if
+//NOTA: o Math.abs converte os valores para um número absoluto (ignorando seu sinal) facilitando a comparação que vamos usar no if
 function catAndMouse(mouse, cat1, cat2) {
 
   let case1 = Math.abs(cat1 - mouse)
@@ -86,15 +86,30 @@ function catAndMouse(mouse, cat1, cat2) {
     return "cat2"
   }
 
-
-
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
+//NOTA: criei uma variável tipo array (result) para armazenar o resultado, utilizei o for para varrer a array, validar e adicionar os match no result usando operadores de comparação, sendo o result retornado após a conclusão do for
+function fizzBuzz(array) {
+  let result = [];
 
+  for(let index = 0; index < array.length; index ++) {
+    
+    if(array[index] % 3 === 0 && array[index] % 5 === 0) {
+      result.push('fizzBuzz');
+
+    } else if(array[index] % 3 === 0) {
+      result.push('fizz');
+
+    } else if(array[index] % 5 === 0) {
+      result.push('buzz');
+
+    } else{
+      result.push('bug!');
+    }
+  }
+  return result;
+}
 // Desafio 9
 function encode() {
   // seu código aqui
