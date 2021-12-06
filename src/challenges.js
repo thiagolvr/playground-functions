@@ -8,8 +8,8 @@ function compareTrue(p1, p2) {
 }
 
 // Desafio 2
-// NOTA: a fórmula é: (base * altura)/2
-//vou criar uma variável que receberá os parâmetros base e altura, aplicará essa fórmula e em seguida irei retornar os resultados
+// TRIÂNGULO: A fórmula é: (base * altura)/2
+//NOTA: vou criar uma variável que receberá os parâmetros base e altura, aplicará essa fórmula e em seguida irei retornar os resultados
 function calcArea(base, height) {
 
     let form = ((base * height) / 2)
@@ -19,7 +19,7 @@ function calcArea(base, height) {
 
 
 // Desafio 3
-//NOTA: aqui usei uma função do js '.split' que separa uma string recebida em palavras, com o divisor sendo uma string vazia separada por aspas e espaço
+//NOTA: Aqui usei uma função do js '.split' que separa uma string recebida em palavras, com o divisor sendo uma string vazia separada por aspas e espaço
 function splitSentence(string) {
     
     let array = string.split(" ")
@@ -30,7 +30,7 @@ function splitSentence(string) {
 
 
 // Desafio 4
-// NOTA: Inicialmente pensei tentei usar o for, mas percebi depois que como se trata da primeira e última posição daria pra acessá-la diretamente através de parâmetros. Crei duas variáveis, uma para cada posição, entretando, novamente, percebi que utilizando apenas uma única varíavel seria mais fácil e rápido de adicionar a vírgula e o espaço, junto as dois índices
+// NOTA: Inicialmente pensei tentei usar o for, mas percebi depois que como se trata da primeira e última posição daria pra acessá-la diretamente através de parâmetros. Crei duas variáveis, uma para cada posição, entretando, novamente, percebi que utilizando apenas uma única varíavel seria mais fácil e rápido de adicionar a vírgula e o espaço, junto as dois índices (concatenar)
 function concatName(arrayAlvo) {
 
   let concatResult 
@@ -55,7 +55,7 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-//NOTA: Utilizando o for in (para percorrer os valores), utilizei uma variável contadora (para ser incrementada), e uma variável como o número máximo daquela array para fins comparativo no for (index), e validado tal condição a variável contadora será incrementada em +1
+//NOTA: Utilizando o for of (para percorrer os valores), utilizei uma variável contadora (para ser incrementada), e uma variável como o número máximo daquela array para fins comparativo no for (index), e validado tal condição a variável contadora será incrementada em +1
 function highestCount(arrayNumbers) {
 
     let contador = 0;
@@ -93,28 +93,28 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(array) {
   let result = [];
 
-  for(let index = 0; index < array.length; index ++) {
+  for (let index = 0; index < array.length; index ++) {
     
-    if(array[index] % 3 === 0 && array[index] % 5 === 0) {
+    if (array[index] % 3 === 0 && array[index] % 5 === 0) {
       result.push('fizzBuzz');
 
-    } else if(array[index] % 3 === 0) {
+    } else if (array[index] % 3 === 0) {
       result.push('fizz');
 
-    } else if(array[index] % 5 === 0) {
+    } else if (array[index] % 5 === 0) {
       result.push('buzz');
 
-    } else{
+    } else {
       result.push('bug!');
     }
   }
   return result;
 }
 
+
+// Desafio 09
 //DESABAFO: Pense num desafio que me estressou porque não me toquei que precisava das duas partes estarem completas para passar. Então, só com a encode completada ficava falhando e eu passei a manhã querendo entender o porquê dessa falha. Refiz esse negócio 500x pra saber que era só dar continuidade ao código, que estava tudo certo. "Burro, dá zero pra ele"
 //NOTA: Utilizei o split para separar as palavras da string em caracteres isolados para poder analisar com o for um por um de acordo com os requisitos, e depois de fazer as devidas substituições utilizei o join para fazer o caminho reverso do split, transformando os caracteres isolados em palavras novamente
-
-
 function encode(string) {
 
 
